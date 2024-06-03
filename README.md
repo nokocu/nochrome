@@ -1,14 +1,14 @@
 # nochrome for Vivaldi
 An CSS theme for Vivaldi, which aims to recreate Chromium look.
 
-![screenshot (2).png](screenshot%20%282%29.png)
+![screenshot (2).png](screenshot_1.png)
 
 ## Features
 - **An accurate replica**: Close to 1:1 recreation, remade from scratch.
 - **Customizable**: All colors are customizable via Vivaldi theme settings, and tab's width is customizable via CSS file.
 - **Dynamic colors**: Compatible with Vivaldi's page accent colors. Go to Settings > Themes > Editor > Enable "Accent from Page"
 
-![screenshot (3).png](screenshot%20%283%29.png)
+![screenshot (3).png](screenshot_2.png)
 
 ## Installation
 1. Download `nochrome.zip`
