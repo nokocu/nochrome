@@ -30,8 +30,3 @@ An CSS theme for Vivaldi, which aims to recreate Chromium look.
 	* Enable `"Expand Hidden Extensions to Drop-Down Menu"`
 7. In settings, search for `"Page Load Progress"`.
 	* Select `"Favicon Progress"`
-8. (Optional) In settings, search for "Tab bar".
-	* Unselect `"Display Synced Tabs Button"`
-	* Unselect `"Display Trash Can"`
-
-
