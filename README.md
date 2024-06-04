@@ -1,4 +1,4 @@
-# nochrome for Vivaldi
+# nochrome theme for Vivaldi Browser
 An CSS theme for Vivaldi, which aims to recreate Chromium look.
 
 ![screenshot 1.png](screenshot%201.png)
