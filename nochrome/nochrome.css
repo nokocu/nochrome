@@ -225,6 +225,7 @@
 	height: 34px !important;
 	border-radius: 100% !important;
 	transition: background-color 0.2s !important;
+	color: var(--colorFg) !important;
 }
 .ToolbarButton-Button:hover, .vivaldi:hover {
 	background-color: var(--new-btnhover) !important;
