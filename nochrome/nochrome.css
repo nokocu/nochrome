@@ -64,7 +64,10 @@
 .UrlFragment-HostFragment-Basedomain, .UrlFragment-HostFragment-TLD {
 	color: var(--colorAccentFg) !important;
 }
-
+.UrlFragment--Lowlight {
+	color: var(--colorAccentFg) !important;
+	opacity: 0.68 !important;
+}
 
 
 /* =============== tabbar =============== */
