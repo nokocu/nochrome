@@ -13,7 +13,7 @@ An CSS theme for Vivaldi Browser, which aims to recreate Chromium look.
 ## Installation
 1. Download nochrome folder.
 	* Unzip the contents of the nochrome folder to your Documents folder, called `nochrome`
-2. Go to `"vivaldi://experiments"`
+2. Go to `vivaldi://experiments`
 	* Enable "Allow for using CSS modifications"
 3. Open Vivaldi Settings
 	* You can search for keywords in the top left corner of the settings page.
@@ -30,4 +30,4 @@ An CSS theme for Vivaldi Browser, which aims to recreate Chromium look.
 7. In settings, search for `"Page Load Progress"`.
 	* Select `Favicon Progress`
 8. (Optional - page accent colors) In settings, go to: `Themes > Editor`
-	* Enable "Accent from Page"
+	* Enable `Accent from Page`
