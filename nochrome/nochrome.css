@@ -48,15 +48,21 @@
 }
 
 
-/* urltext hide https:// part */
-.UrlFragment--Lowlight:first-of-type {
+/* url insecure page appearance */
+.siteinfo-text {
+	font-size: 0px !important;
+	margin-left: 50px !important;
+}
+
+/* urltext wrapper - hide https:// and www parts */
+.UrlFragment--Lowlight:first-of-type, .UrlFragment-HostFragment-Subdomain {
     display: none;
 }
 
 
-/* urltext hide www part */
-.UrlFragment-HostFragment-Subdomain {
-    display: none;
+/* urltext wrapper - colors */
+.UrlFragment-HostFragment-Basedomain, .UrlFragment-HostFragment-TLD {
+	color: var(--colorAccentFg) !important;
 }
 
 
@@ -89,7 +95,7 @@
 /* tab active */
 .tab-strip .active {
 	background-color: var(--colorAccentBg) !important;
-	color: var(--colorFg) !important;
+	color: var(--colorAccentFg) !important;
 }	
 
 
@@ -225,7 +231,7 @@
 	height: 34px !important;
 	border-radius: 100% !important;
 	transition: background-color 0.2s !important;
-	color: var(--colorFg) !important;
+	color: var(--colorAccentFg) !important;
 }
 .ToolbarButton-Button:hover, .vivaldi:hover {
 	background-color: var(--new-btnhover) !important;
@@ -355,6 +361,7 @@ div[name="SearchField"]
 }
 .toggle-trash button {
 	opacity: 1 !important;
+	color: var(--colorAccentFg) !important;
 	background-color: var(--colorAccentBg) !important;
 	border-radius: 10px !important;
 	min-height: 28px !important;
