@@ -11,7 +11,7 @@ An CSS theme for Vivaldi Browser, which aims to recreate Chromium look.
 ![screenshot 2.png](screenshot%202.png)
 
 ## Installation
-1.  [Download the latest `nochrome.zip`]([https://link-url-here.org](https://github.com/nokocu/nochrome/releases))
+1.  [Download the latest `nochrome.zip`](https://github.com/nokocu/nochrome/releases)
 	* Unzip the contents of the zip to folder in your Documents, called `nochrome`
 2. Go to `vivaldi://experiments`
 	* Enable "Allow for using CSS modifications"
