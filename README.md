@@ -29,5 +29,7 @@ An CSS theme for Vivaldi Browser, which aims to recreate Chromium look.
 	* Enable `Expand Hidden Extensions to Drop-Down Menu`
 7. In settings, search for `"Page Load Progress"`.
 	* Select `Favicon Progress`
-8. (Optional - page accent colors) In settings, go to: `Themes > Editor`
+8. In settings, search for `"User interface Zoom"`.
+	* Make sure it's set to `100%`
+9. (Optional - page accent colors) In settings, go to: `Themes > Editor`
 	* Enable `Accent from Page`
