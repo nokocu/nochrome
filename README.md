@@ -24,12 +24,13 @@ An CSS theme for Vivaldi Browser, which aims to recreate Chromium look.
 	* Navigate to the "nochrome" folder from your documents
 	* Select the `theme-nochrome.zip`
 	* Click install
-6. In settings, search for `Extension Visiblity` and:
+6. In settings, search for `"Page Load Progress"`.
+	* Select `Favicon Progress`
+7. In settings, search for `"User interface Zoom"`.
+	* Make sure it's set to `100%`
+8. (Optional - more chrome-like) In settings, search for `Extension Visiblity` and:
 	* Select `Toggle All Extensions`
 	* Enable `Expand Hidden Extensions to Drop-Down Menu`
-7. In settings, search for `"Page Load Progress"`.
-	* Select `Favicon Progress`
-8. In settings, search for `"User interface Zoom"`.
-	* Make sure it's set to `100%`
 9. (Optional - page accent colors) In settings, go to: `Themes > Editor`
 	* Enable `Accent from Page`
+
