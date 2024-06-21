@@ -1,5 +1,5 @@
 # nochrome
-An CSS theme for Vivaldi Browser, which aims to recreate Chromium look (Windows only, for now...)
+An CSS theme for Vivaldi Browser, which aims to recreate Chromium look (Windows and Linux only, macos support coming later)
 
 ![screenshot 1.png](screenshot%201.png)
 
@@ -35,3 +35,7 @@ An CSS theme for Vivaldi Browser, which aims to recreate Chromium look (Windows 
 9. (Optional - page accent colors) In settings, go to: `Themes > Editor`
 	* Enable `Accent from Page`
 
+## Known issues
+- macOS is not supported yet
+- Tab stacking not working correctly
+- Location and microphone access dialogs not showing up
