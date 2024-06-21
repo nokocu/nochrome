@@ -1,11 +1,10 @@
 /* =============== nochrome by nokocu =============== */
-
 :root{
 	--mainbar-height: 47px;
 	--tabbar-height: 34px;
 	--urlbar-height: 34px;
 	--tab-width: 233px;
-
+ 
 	--new-url: rgba(0, 0, 0, 0.32);
 	--new-urlhover: rgba(255, 255, 255, 0.16);
 	--new-btnurl: rgba(255, 255, 255, 0.09);
@@ -13,8 +12,16 @@
 }
 
 
-/* =============== urlbar =============== */
+/* =============== optional (feel free to remove) =============== */
 
+/* removes the border around focused window in split window view */
+.webpageview.tiled:not(.active), .hasfocus .webpageview.tiled.active, .isblurred .webpageview.tiled.active  {
+  box-shadow: 0 0 0 2px transparent;
+}
+ 
+
+/* =============== urlbar =============== */
+ 
 /* urlbar position and sizing */
 .UrlBar-AddressField {
 	left: 6px !important;
@@ -29,14 +36,14 @@
 	background-color: var(--new-urlhover) !important;
 	transition: background-color 0.2s !important;
 }
-
-
+ 
+ 
 /* urlbar highlight color */
 .UrlBar-AddressField {
 	outline-color: var(--colorHighlightBg) !important;
 }
-
-
+ 
+ 
 /* urltext aligment */
 .UrlField {
 	bottom: 1px  !important;
@@ -46,20 +53,20 @@
 #urlFieldInput {
 	padding-right: 0px !important;
 }
-
-
+ 
+ 
 /* url insecure page appearance */
 .siteinfo-text {
 	font-size: 0px !important;
 	margin-left: 50px !important;
 }
-
+ 
 /* urltext wrapper - hide https:// and www parts */
 .UrlFragment--Lowlight:first-of-type, .UrlFragment-HostFragment-Subdomain {
     display: none;
 }
-
-
+ 
+ 
 /* urltext wrapper - colors */
 .UrlFragment-HostFragment-Basedomain, .UrlFragment-HostFragment-TLD {
 	color: var(--colorAccentFg) !important;
@@ -68,22 +75,16 @@
 	color: var(--colorAccentFg) !important;
 	opacity: 0.68 !important;
 }
-
-
+ 
+ 
 /* =============== tabbar =============== */
-
+ 
 /* tabstrip start position */
 #tabs-container:not(.none).top {
     padding-left: 40px !important;
 }
-
-
-/* tabstrip end position */
-#tabs-container {
-	padding-right: 201px !important;
-}
-
-
+ 
+ 
 /* tab appearance */ 
 .tab {
 	margin-top: 6px !important;
@@ -93,49 +94,49 @@
 	color: var(--colorFg) !important;
 	background-color: transparent !important;
 }
-
-
+ 
+ 
 /* tab active */
 .tab-strip .active {
 	background-color: var(--colorAccentBg) !important;
 	color: var(--colorAccentFg) !important;
 }	
-
-
+ 
+ 
 /* tab winglets */
 .tab::before,
 .tab::after {
 	width: 11px !important;
     height: 11px !important;
 }
-
+ 
 .tab::before {
 	left: -11px !important;
 }
 .tab::after {
 	right: -10px !important;
 }
-
-
+ 
+ 
 /* tab clickable height */ 
 #tabs-tabbar-container {
 	height: 40px !important;
 	padding:0 !important;
 }
-
-
+ 
+ 
 /* tabs favicon margin */ 
 .title, .tab-header {
 	padding-left: 7px !important;
 }
-
-
+ 
+ 
 /* tab favicon no glow */
 .favicon {
 	filter: none !important;
 }
-
-
+ 
+ 
 /* tab text aligments */
 .tab-position .tab .title {
     line-height: 0px !important;
@@ -146,14 +147,14 @@
 .tab-position:hover .tab:not(.active) .tab-header {
     bottom: 0px; 
 }
-
-
+ 
+ 
 /* tab text inactive */
 .tab:not(.active) .title {
-	opacity: 0.85 !important;
+	opacity: 0.7 !important;
 }
-
-
+ 
+ 
 /* tab hover */
 .tab-position:hover > .tab:not(.active)  {
 	bottom: 0px !important;
@@ -164,42 +165,17 @@
     border-bottom-left-radius: 11px !important;
     border-bottom-right-radius: 11px !important;
 }
-
-
+ 
+ 
 /* tab radius */
 .tabs-top .tab-position .tab:not(.tab-in-accordion, .tab-accordion) {
     border-top-left-radius: 11px !important;
     border-top-right-radius: 11px !important;
 }
-
-
-/* tabs custom tab width */
-.tab-strip {
-	display: flex !important;
-}
-.tab-strip span {
-	flex: 0 1 var(--tab-width) !important;
-}
-.tab-position {
-	flex: 0 1 var(--tab-width) !important;
-	position: relative !important;
-	--PositionX: inherit !important;
-	margin-right: 5px !important;
-}
-.newtab {
-    position: relative !important;
-    left: auto !important;
-    top: auto !important;
-}
-.tab-position .tab .favicon,
-.tab-position .tab .close {
-	flex: 0 0 18px !important;
-}
-
-
-
+ 
+ 
 /* =============== mainbar =============== */
-
+ 
 .mainbar {
 	height: var(--mainbar-height) !important;
 	display: flex !important;
@@ -208,8 +184,8 @@
 	border-top-left-radius: 8px !important;
 	border-top-right-radius: 8px !important;
 }
-
-
+ 
+ 
 /* toolbar */
 .toolbar-mainbar {
 	width: calc(100% - 40px) !important;
@@ -217,17 +193,17 @@
 .toolbar {
 	padding-left: 4px !important;
 }
-
-
+ 
+ 
 /* toolbar divider appearance */
 .toolbar-divider .button-icon svg rect {
 	width: 2px !important;
 	opacity: 0.4 !important;
 }
-
-
+ 
+ 
 /* =============== buttons =============== */
-
+ 
 /* buttons main  */
 .toolbar-mainbar .ToolbarButton-Button, .vivaldi {
 	margin: 1px !important;
@@ -240,8 +216,8 @@
 	background-color: var(--new-btnhover) !important;
 	transition: background-color 0.2s !important;
 }
-
-
+ 
+ 
 /* button newtab */
 .tab-strip {
 	align-items: center !important;
@@ -253,17 +229,16 @@
 	background-color: rgba(255, 255, 255, 0.15) !important;
 	transition: background-color 0.2s !important;
 }
-
-
-/* button newtab height */
 .newtab .ToolbarButton-Button {
 	min-height: 28px !important;
 	min-width: 28px !important;
 	transition: background-color 0.2s !important;
 	border-radius: 100% !important;
+	max-width: 28px !important;
+    margin-top: 6px;
 }
-
-
+ 
+ 
 /* button menu */
 .vivaldi {
 	left: calc(100vw - 40px) !important;
@@ -273,14 +248,14 @@
     width: 34px !important;
     position: fixed !important; 
 }
-
-
+ 
+ 
 /* button menu no arrow */
 .expand-arrow {
 	display: none !important;
 }
-
-
+ 
+ 
 /* button security */
 .SiteInfoButton {
     margin-left: 4px !important;
@@ -295,8 +270,8 @@
 .toolbar-small {
     margin-right: 11px !important;
 }
-
-
+ 
+ 
 /* buttons urlbox right */
 .BookmarkButton-Button .ToolbarButton-Button, 
 .password-icon .ToolbarButton-Button {
@@ -319,14 +294,14 @@
 .toolbar-small .button-title {
 	display:none !important;
 }
-
-
+ 
+ 
 /* button bookmarked */
 .BookmarkButton .button-on .bookmark-outline {
 	fill: var(--colorHighlightBg) !important;
 }
-
-
+ 
+ 
 /* button closetab */
 .close {
 	background-color: rgba(0, 0, 0, 0);
@@ -335,8 +310,8 @@
 .close:hover {
 	background-color: rgba(255, 255, 255, 0.15);
 }
-
-
+ 
+ 
 /* hidden buttons and elements */
 .toolbar-spacer-flexible,
 div[name="SearchField"],
@@ -350,8 +325,8 @@ div[name="SearchField"]
 {
 	display: none !important;
 }
-
-
+ 
+ 
 /* buttons from tabstrip  */
 .sync-and-trash-container {
 	display: inline-flex !important;
@@ -359,8 +334,8 @@ div[name="SearchField"]
 .toggle-trash {
 	align-self: center !important;
 	padding-right: 15px !important;
-	position: absolute;
-    left: 6px;
+	position: fixed !important;
+    left: 6px !important;
 }
 .toggle-trash button {
 	opacity: 1 !important;
@@ -375,67 +350,117 @@ div[name="SearchField"]
 .synced-tabs-button {
 	align-self: auto !important;
     left: 53px !important;
+    margin-right: 62px !important;
 }
 
-
+ 
+ 
 /* buttons window control */
-.window-maximize, .window-minimize, .window-close {
+.win .window-maximize, .win .window-minimize, .win .window-close {
 	height: calc(var(--tabbar-height) + 6px) !important;
     margin: 0px !important;
 	padding-bottom: 2px !important;
 }
-
-
+ 
+ 
 /* button avatar */
 .toolbar-large .button-circularimage.button-cropimage.profile-popup button img {
     height: 20px !important;
     width: 20px !important;
 }
-
-
+ 
+/* button workspaces */
+button[name="WorkspaceButton"] {
+    border-radius: 11px !important;
+    height: 28px !important;
+    margin-bottom: 9px !important;
+}
+button[name="WorkspaceButton"] .button-title {
+    margin-top: 1px !important;
+}
+ 
+ 
 /* =============== custom svg's =============== */
-
+ 
 /* svg custom dimensions */
 .override svg {
 	width:18px !important;
 	height:18px !important;
 }
-
-
+ 
+ 
 /* svg menu */
 .vivaldi path {
 	d: path("M12.5 16a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0m0-5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0m0-5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0") !important;
 }	
-
-
+ 
+ 
 /* svg bookmark */
 .BookmarkButton-Button path {
 	d: path("M6.122 12.333 8.655 10.598 11.251 12.418 10.097 9.589 12.31 7.769 9.563 7.771 8.75 4.36 7.936 7.779 4.97 7.746 7.211 9.589 6.122 12.333ZM3.414 16.351 4.818 10.28.108 6.197 6.329 5.657 8.75-.069 11.169 5.657 17.39 6.197 12.681 10.28 14.085 16.351 8.75 13.132 3.413 16.351 3.414 16.351ZM8.75 8.789Z") !important;
-
+ 
 }	
-
-
+ 
+ 
 /* svg bookmarked */
 .BookmarkButton-Button .button-on path {
 	d: path("M8.229 8.021 8.25 7.952 8.271 8.07 8.309 8.068 8.232 8.036 8.217 8.008 8.25 8.079 8.193 7.928 8.268 7.927 8.22 8.038 8.229 8.021ZM3.219 15.389 4.543 9.665.102 5.815 5.968 5.306 8.25-.093 10.531 5.306 16.398 5.815 11.957 9.665 13.281 15.389 8.25 12.354 3.218 15.389 3.219 15.389ZM8.25 8.259Z") !important;
 }	
-
-
+ 
+ 
 /* svg siteinfo */
 .SiteInfoButton-SecurityBadge path {
 	d: path("M12.096 14.2797q-1.1176 0-1.8894-.7717T9.4348 11.6186q0-1.1176.7717-1.8894T12.096 8.9574q1.1176 0 1.8894.7717T14.7571 11.6186q0 1.1176-.7717 1.8894T12.096 14.2797Zm0-1.4193q.5145 0 .8782-.3636T13.3378 11.6186q0-.5145-.3636-.8782T12.096 10.3767q-.5145 0-.8782.3636T10.8541 11.6186q0 .5145.3636.8782T12.096 12.8604Zm-9.7574-.5322v-1.4193h5.6771v1.4193H2.3385Zm1.5967-4.4352q-1.1176 0-1.8894-.7717T1.2741 5.2319q0-1.1176.7717-1.8894T3.9352 2.5708q1.1176 0 1.8894.7717T6.5963 5.2319q0 1.1176-.7717 1.8894T3.9352 7.893Zm0-1.4193q.5145 0 .8782-.3636T5.1771 5.2319q0-.5145-.3636-.8782T3.9352 3.99q-.5145 0-.8782.3636T2.6933 5.2319q0 .5145.3636.8782T3.9352 6.4737Zm4.0804-.5322v-1.4193h5.6771v1.4193H8.0156Zm4.0804 5.6771ZM3.9352 5.2319Z") !important;
 }	
-
-
+ 
+ 
 /* svg password*/
 .password-icon path {
 	d: path("M4.3 11q-.66 0-1.13-.47T2.7 9.4q0-.66.47-1.13T4.3 7.8q.66 0 1.13.47T5.9 9.4q0 .66-.47 1.13T4.3 11Zm0 3.2q-2 0-3.4-1.4T-.5 9.4q0-2 1.4-3.4t3.4-1.4q1.34 0 2.43.66t1.73 1.74h7.04l2.4 2.4-3.6 3.6-1.6-1.2-1.6 1.2-1.7-1.2h-.94q-.64 1.08-1.73 1.74T4.3 14.2Zm0-1.6q1.12 0 1.97-.68t1.13-1.72h2.5l1.16.82 1.64-1.22 1.42 1.1 1.5-1.5-.8-.8H7.4q-.28-1.04-1.13-1.72T4.3 6.2q-1.32 0-2.26.94t-.94 2.26q0 1.32.94 2.26t2.26.94Z") !important;
 }
-
-
+ 
+ 
 /* svg lasttabs */
 .toggle-trash path {
 	d:path("M13.6 17.34 8.8 12.54l1.02-1.02 3.78 3.78 3.78-3.78 1.02 1.02-4.8 4.8Z") !important;
 	stroke-width: 0 !important;
 }
+ 
 
+/* =============== linux adjustements =============== */
+ 
+/* linux - button newtab */
+.linux .newtab .ToolbarButton-Button {
+    margin-top: 5px !important;
+}
+ 
+ 
+/* linux - tab strip adjustements */
+.linux .tab-strip {
+    max-width: 80vw
+}
+ 
+ 
+/* linux - tab title text aligment */
+.linux .tab-position .tab .title {
+    line-height: 29px !important;
+}
+ 
+ 
+/* linux - window control buttons*/
+.linux .window-buttongroup {
+    top: calc(10px / var(--uiZoomLevel)) !important;
+    top: 0px !important;
+    right: 0px !important;
+    border-radius: 0px !important;
+}
+.linux .window-buttongroup button:hover{
+    background-color: var(--new-btnhover) !important; 
+    border-radius: 0px !important;
+}
+.linux .window-buttongroup button {
+    background-color: transparent !important; 
+    height: 40px !important;
+    width: 28px !important;
+}
+ 
