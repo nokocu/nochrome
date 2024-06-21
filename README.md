@@ -1,5 +1,5 @@
 # nochrome
-An CSS theme for Vivaldi Browser, which aims to recreate Chromium look (Windows and Linux only, macos support coming later)
+An CSS theme for Vivaldi Browser, which aims to recreate Chromium look
 
 ![screenshot 1.png](screenshot%201.png)
 
@@ -11,7 +11,7 @@ An CSS theme for Vivaldi Browser, which aims to recreate Chromium look (Windows 
 ![screenshot 2.png](screenshot%202.png)
 
 ## Installation
-0. Make sure you're on Windows. Linux and macos are not yet fully supported
+0. Make sure you're on Windows or Linux. Macos vivaldi is not yet fully supported
 1.  [Download the latest `nochrome.zip`](https://github.com/nokocu/nochrome/releases)
 	* Unzip the contents of the zip to folder in your Documents, called `nochrome`
 2. Go to `vivaldi://experiments`
